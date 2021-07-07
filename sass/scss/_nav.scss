@@ -1,0 +1,104 @@
+
+.contener-top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    .logo{
+        text-align:left;
+        margin:0;
+        padding:0;
+    }
+    .moj-div-button{
+        text-align:right;
+        padding:0;
+    }
+    .moje-godziny{
+        text-align:center;
+    }
+    .mojtelefon{
+        text-align:center;
+    }
+
+    h1{
+        font-size:$h1-size *0.80;
+    }
+    .mojaikona{
+        padding-right: 3%;
+    }
+
+
+}
+
+    
+
+@media only screen and (max-width:992px){
+    .contener-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+
+        .moj-div-button{
+            padding-top: 2%;
+            padding-bottom: 2%;
+           
+            text-align: center;
+        }
+        .navbar-brand {
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin:0;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .mojtelefon{
+            
+      
+        text-align: center;
+        font-size:$h1-size *0.80;
+
+        }
+        .logo{
+            text-align: center;
+        }
+
+    
+    }
+    
+}
+.podlinki
+{
+ 
+}
+div>p>a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+@media only screen and (max-width:767px){
+    .paddingdol
+    {
+        padding-bottom:10px;
+    }
+    .paddinggora
+    {
+        padding-top:10px!important;
+    }
+}
+@media only screen and (max-width:767px){
+    .wylaczod767
+    {
+        display:none;
+    }
+}

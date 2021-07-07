@@ -1,0 +1,26 @@
+{#
+/**
+ * Block Name: sekcja strona główna
+ *
+ */
+#}
+{% if is_preview %}
+	<h2>Sekcja -
+		{{fields.tytul_sekcji}}</h2>
+	<InnerBlocks/>
+{% else %}
+	<section class="section section-{{fields.dataid}}">
+		<div data-id="{{fields.dataid}}" class="section__inner section-inner-{{fields.dataid}}">
+			{% if fields.tytul_sekcji != "" %}
+				<div class="section__inner-title-container">
+					{% if fields.tytul_sekcji != "" %}
+						<h2 class="section__inner-title">{{fields.tytul_sekcji}}</h2>
+					{% endif %}
+				</div>
+			{% endif %}
+			<div class="section__inner-content">
+				<InnerBlocks/>
+			</div>
+		</div>
+	</section>
+{% endif %}

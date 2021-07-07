@@ -1,0 +1,14 @@
+<div class="breadcrumb">
+    <div class="breadcrumb__title title"><h1>{{post.title}}</h1></div>
+                    <div class="breadcrumb__tax">
+                      {% block breadcrumbs %}
+
+          {% if breadcrumbs %}
+
+              {{ breadcrumbs }}
+
+          {% endif %} 
+
+      {% endblock %}
+                    </div>
+</div>

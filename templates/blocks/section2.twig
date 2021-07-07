@@ -1,0 +1,14 @@
+{% if is_preview %}
+	<h2>Przystąp do programu</h2>
+	<InnerBlocks/>
+{% else %}
+
+
+
+      {% for item in fields.pola %}
+      <td colspan="2">{{item.title}}</td>
+      {% endfor %} 
+
+
+			
+{% endif %}

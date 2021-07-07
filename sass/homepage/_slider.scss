@@ -1,0 +1,202 @@
+
+    
+    #demos{
+        .row{
+            --bs-gutter-x: 0;
+        }
+    }
+
+    .ikonaprawo
+    {
+        text-align:right;
+        margin:0;
+        padding:0;
+    }
+    .pozycjaikon
+    {
+        font-size:15px; 
+        line-height: 32px;
+    }
+    .googlerv
+    {
+        border-radius: 5px;
+        width: 32px;
+         height: 32px;
+        background-color:#fadc33;
+        text-align: center;
+
+    }
+    .googlerv:hover
+    {
+        background-color:#ffd700;
+      
+    }
+    .onas
+    {
+        border-radius: 5px;
+        width: 32px;
+         height: 32px;
+        background-color: #3095d3;
+        text-align: center;
+
+    }
+    .onas:hover
+    {
+        background-color: #2084c2;
+      
+    }
+    .lokalizacja
+    {
+        border-radius: 5px;
+        width: 32px;
+         height: 32px;
+        background-color: #93c748;
+        text-align: center;
+
+    }
+    .lokalizacja:hover
+    {
+        background-color: #82b637;
+      
+    }
+     .fb
+     {
+        border-radius: 5px;
+         width: 32px;
+         height: 32px;
+         background-color: #4668b3;
+         text-align: center;
+
+     }
+     .fb:hover
+     {
+         background-color: #3557a2;
+       
+     }
+     .askus
+     {
+        border-radius: 5px;
+         width: 32px;
+         height: 32px;
+         background-color: rgb(250, 182, 54);
+         text-align: center;
+
+     }
+     .askus:hover
+     {
+         background-color: orange;
+       
+     }
+     a.mojesociale
+     {
+         color: #ffffff;
+         text-decoration: none;
+         
+     }
+   
+////////////////////////////////
+
+     body{
+         font-size:16px;
+     }
+     .malyprzycisk
+     {
+         width:70%;
+     }
+
+     @media only screen and (min-width: 768px) {
+
+        .kreskinav{
+            border-right: 1px solid;
+            border-left:1px solid;
+          
+        
+     }
+     .czionka
+     {
+        font-size:0.8rem;
+     }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+    
+        .malyprzycisk{
+        width:70%!important;
+        }
+        #demos{
+            margin-top:-53px!important;
+        }
+        .paddingdoll
+        {
+            padding-bottom:5px!important;
+            padding-top:5px!important;
+        }
+     }
+     
+
+   
+
+     ////////////slider////////////////////////////////
+     .slider-text{
+        padding-top:11vh;
+        padding-bottom:11vh;
+     }
+     .owl-dots
+     {
+         display:none;
+     }
+     
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: red;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .h2slajder
+    {
+        color:red; 
+        width: 50%; 
+        padding-bottom:1vh;
+    }
+    .pslajder
+    {
+        color:white; 
+        width:80%; 
+        font-size:16px; 
+        padding-bottom:2vh;
+    }
+    @media only screen and (max-width: 1200px) {
+    
+        .h2slajder
+        {
+            width: 100%; 
+            padding-bottom:1vh;
+        }
+        .pslajder
+        {
+            color:white; 
+            width:100%; 
+            font-size:14px; 
+            padding-bottom:1vh;
+        }
+        .slider-text{
+            padding-top:1vh;
+            padding-bottom:1vh;
+         } 
+     }
+
+     .sticky{
+         width:100%;
+         position:fixed;
+         left:0;
+         top:0;
+         z-index:10000;
+     }
+     
+

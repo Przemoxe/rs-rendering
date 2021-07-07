@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+{% block content %}
+
+
+	<div class="notfound">
+		{% include 'title.twig' %}
+		<div class="notfound__text">
+			Nie znaleziono strony, której szukasz. Wróć na
+			<a href="{{ site.link }}">stronę główną</a>
+			lub sprawdź menu powyżej.
+		</div>
+	</div>
+
+
+{% endblock %}

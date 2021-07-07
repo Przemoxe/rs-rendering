@@ -1,0 +1,209 @@
+
+
+
+
+
+
+
+
+
+{#
+/**
+ * Block Name: sekcja strona główna
+ *
+ */
+#}
+{% if is_preview %}
+	<h2>Sekcja -
+		{{fields.tytul_sekcji}}</h2>
+	<InnerBlocks/>
+{% else %}
+<script>
+  jQuery(window).scroll(function($){
+    jQuery('nav').toggleClass('scrolled', jQuery(this).scrollTop() > 92);
+  });
+</script>
+<style>
+.bg-info{
+  background:transparent!important;
+  transition:0.5s ease;
+}
+.bg-dark.scrolled{
+  background:#161616!important;
+}
+</style>
+
+
+<nav class="bg-dark sticky-top navbar-default bg-info" >
+<div class="d-none d-md-block  " style=" position: relative;  z-index:1; border-color:white; border-bottom:1px solid rgba(255, 255, 255, 0.15); ">
+  <div class="container w-75 brakgutter " >
+
+      <div class="row"  style="z-index:1;">
+
+        <div class="col-lg " style="padding:0; ">
+           <nav class="navbar navbar-dark navbar-expand-md " style="padding:0px">
+              <div class="p-0 " style="z-index:1; width: 52px; border-color:white; border-right:1px solid rgba(255, 255, 255, 0.15);">
+                  <a href="#" class="bi bi-house-door " style="font-size:35px; color:red; " ></a>
+              </div>
+              <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav" style="padding-left:5px">
+                  <li class="nav-item " >
+                    <a class="nav-link" href="http://localhost/niecukrzymy/#">Start</a>
+                  </li>
+                  <li class="nav-item">
+   
+                    <a class="nav-link " href="http://localhost/niecukrzymy/#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/niecukrzymy/#gallery">Gallery</a>
+                  </li>
+                  </li><li class="nav-item" >
+                    <a class="nav-link" href="http://localhost/niecukrzymy/#location">Location</a>
+                  </li>
+                  <li class="nav-item" >
+                    <a class="nav-link" href="http://localhost/niecukrzymy/#contact">Contact</a>
+                  </li>
+                   
+                </ul>
+              </div>
+
+           </nav>
+        </div>
+
+        <div class="col-lg-3 mt-auto mb-auto d-none d-lg-block  " >
+            <div class="row d-flex justify-content-end" style="">
+              <div class="col-sm-3 " style="padding: 0; text-align: -webkit-right; width:32px;margin-right:6px;">
+			          	<a href="https://www.facebook.com/RenderingManchester/services/?ref=page_internal" target="_blank" class="mojesociale" style="">
+                    <div class="fb" >
+                      <i class="icon-facebook pozycjaikon"></i>
+                    </div>
+                  </a>
+             </div>
+             <div class="col-sm-3 " style="padding: 0; text-align: -webkit-right;width:32px;margin-right:6px;">
+			          	<a href="https://www.google.com/search?q=rs-renderingspecialists&oq=rs-renderingspecialists+&aqs=chrome..69i57j69i60l4j0.2898j0j7&sourceid=chrome&ie=UTF-8#lrd=0x487bb34837bb1641:0xa5ca767e1238dfcd,1,,," target="_blank" class="mojesociale">
+                    <div class="googlerv" >
+                      <i class="icon-star pozycjaikon"></i>
+                    </div>
+                  </a>
+             </div>
+             <div class="col-sm-3 " style="padding: 0; text-align: -webkit-right;width:32px;margin-right:6px;">
+			          	<a href="http://localhost/niecukrzymy/#location"  class="mojesociale">
+                    <div class="lokalizacja" >
+                      <i class="icon-location pozycjaikon"></i>
+                    </div>
+                  </a>
+             </div>
+             <div class="col-sm-3 " style="padding: 0; text-align: -webkit-right;width:32px;margin-right:20px;">
+			          	<a href="http://localhost/niecukrzymy/#contact"  class="mojesociale">
+                    <div class="onas" >
+                      <i class="icon-adult pozycjaikon"></i>
+                    </div>
+                  </a>
+             </div>
+             
+           </div>
+
+
+
+
+       
+
+
+          
+        </div>
+        <div class="col-lg-1  p-0 d-none d-lg-flex justify-content-end  "style=" width: 52px; border-color:white; border-left:1px solid rgba(255, 255, 255, 0.15);">
+          
+             <div class="row mt-auto mb-auto">
+                <div class="col-sm-3  ">
+			          	<a href="http://localhost/niecukrzymy/#Request" class="mojesociale">
+                    <div class="askus ">
+                      <i class="icon-comment pozycjaikon"></i>
+                    </div>
+                  </a>
+                </div>
+             </div>
+         
+        </div>
+    </div>
+  </div>
+</div>
+ 
+<nav class="navbar navbar-light d-block d-md-none" style="background-color:#b2b2b2; text-align:center;">
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav" style="padding-left:5px">
+                  <li class="nav-item " >
+                    <a class="nav-link" href="http://localhost/niecukrzymy/#">Start</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Serices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li><li class="nav-item" >
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+       </ul>
+      
+    </div>
+ 
+</nav>
+</nav>
+
+
+
+   <section id="demos" >
+      <div class="row">
+        <div class="large-12 columns">
+                           
+          <div class="przemek owl-carousel owl-theme" style="margin-top:px; z-index:0 ;opacity: 1;background-color:#323232">
+          
+          {% for slider in fields.slider %}
+            <div class="item" style="    background-position: center;
+    background-size: 100% auto;;background-image:linear-gradient(rgba(0.7, 0.7, 0.7, 0.7), rgba(0.7, 0.7, 0.7, 0.7)),url({{Image(slider.image).src}});">
+              <div class="container w-75 p-0 pt-5 pb-1" style="height:100%;display:flex;align-items:center;">
+                <div class="slider-text   ">
+
+                  <h2 class="h2slajder mt-2">{{slider.title}}</h2>
+                  <p style="padding-bottom:120px;" class="pslajder ">{{slider.subtitle}}</p>
+         
+            
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            
+        {% endfor %}
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+     <script>
+            jQuery(document).ready(function($) {
+              $('.przemek').owlCarousel({
+                items: 1,
+                animateOut: 'fadeOut',
+                loop: true,
+              });
+            });
+          </script>
+
+
+
+
+ {% endif %}

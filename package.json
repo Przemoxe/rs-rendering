@@ -1,0 +1,41 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "template",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^5.0.0-beta3",
+    "bootstrap-icons": "^1.5.0",
+    "cssnano": "^4.1.10",
+    "graceful-fs": "4.2.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-install": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.3.2",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "author": "ad360",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  }
+}

@@ -1,0 +1,17 @@
+{% if menu %}
+
+	<ul class="menu {{menuType}}">
+		{% for item in items %}
+
+			<li class="menu__li{{ item.classes | join(' ') }}">
+				<a class="menu__li-link" href="{{ item.link }}">
+					{{ item.title }}
+				</a>
+				{% if item.children and menu.theme_location != 'menu_footer' %}
+					{% include "menu.twig" with {'items': item.children} %}
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+
+{% endif %}
